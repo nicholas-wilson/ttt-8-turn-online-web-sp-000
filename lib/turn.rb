@@ -32,3 +32,6 @@ def move (board, user_input, token = "X")
     end
   end
 end
+
+#turn lets the player make a move if provided with valid input
+def turn (board, )
