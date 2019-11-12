@@ -29,6 +29,7 @@ def move (board, user_input, token)
     until (valid_move?(board, user_input))
       puts "Invalid Board Position try again with an integer between 1-9"
       user_input = gets.strip
+      user_input.to_i
     end
   end
 end
