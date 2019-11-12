@@ -38,4 +38,5 @@ def turn (board, token = 'X')
   puts "Please enter 1-9:"
   position = gets.strip
   move(board, input_to_index(position), token)
+  display_board(board)
 end
