@@ -22,7 +22,7 @@ def valid_move? (board, position)
 end
 
 #move let play take turn if their input is valid
-def move (board, user_input, token = "X")
+def move (board, user_input, token)
   if (valid_move?(board, user_input))
     board[user_input] = token
   else
@@ -34,6 +34,8 @@ def move (board, user_input, token = "X")
 end
 
 #turn lets the player make a move if provided with valid input
-def turn (board)
-  puts "Select a position from 1-9"
+def turn (board, token = 'X')
+  puts "Please enter 1-9:"
+  position = gets.strip
+  move(board, input_to_index(position), token)
 end
