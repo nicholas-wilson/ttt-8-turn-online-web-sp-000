@@ -34,4 +34,6 @@ def move (board, user_input, token = "X")
 end
 
 #turn lets the player make a move if provided with valid input
-def turn (board, )
+def turn (board)
+  puts "Select a position from 1-9"
+end
