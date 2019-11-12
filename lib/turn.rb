@@ -7,6 +7,11 @@ def display_board (board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+#input_to_index takes input from user and turns it into an array index
+def input_to_index (number)
+  return (number - 1)
+end
+
 #valid_move? makes sure the players input is good
 def valid_move? (board, position)
   if ((board[position] != 'X' && board[position] != 'O') && (position >= 0 && position <= 8))
