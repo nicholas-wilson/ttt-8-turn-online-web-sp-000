@@ -8,8 +8,8 @@ def display_board (board)
 end
 
 #input_to_index takes input from user and turns it into an array index
-def input_to_index (number)
-  return (number - 1)
+def input_to_index (user_input)
+  return (user_input - 1)
 end
 
 #valid_move? makes sure the players input is good
